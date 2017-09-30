@@ -1,0 +1,23 @@
+/*
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* mainx                                                                          */
+/*********************************************************************************/
+
+	#mainx
+	{
+	}
+	
+		#mainx > section
+		{
+			padding: 3em 0;
+		}
+
+		#mainx section.cover
+		{
+			padding: 5em 0;
+		}

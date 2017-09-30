@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Owl Carousel - Custom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrapTheme.css" rel="stylesheet">
+
+    <!-- Owl Carousel Assets IMPORTANT -->
+    <link href="owl.carousel.css" rel="stylesheet">
+    <link href="owl.theme.css" rel="stylesheet">
+  </head>
+  <body style="background-color:black;">
+        
+<!--      -->
+<!--      USE THIS CONTAINER      -->
+<!--      -->
+      <div class="container"> 
+          <div class="row">
+            <div class="span12">
+
+              <div id="owl-demo" class="owl-carousel">
+                
+                <div class="item"><img src="Amazon-logo-png-transparent-white.png" class="img-responsive"></div>
+                <div class="item"><img src="deloitte-logo.png" class="img-responsive"></div>
+                <div class="item"><img src="goldman-sachs-logo.jpg" class="img-responsive"></div>
+                <div class="item"><img src="Google_logo_white_2015.png" class="img-responsive"></div>
+                <div class="item"><img src="Samsung_Logo.svg.png" class="img-responsive"></div>
+                <div class="item"><img src="Ti_stk_1c_rev_rgb_png.png" class="img-responsive"></div>
+                <div class="item"><img src="adobe.png" class="img-responsive"></div>
+             
+                </div>
+             
+            </div>
+          </div>
+        </div>
+<!--      -->
+<!--       CONTAINER  END    -->
+<!--      -->
+
+<!--      -->
+<!--     IMPORTANT JS      -->
+<!--      -->
+    <script src="jquery-1.9.1.min.js"></script> 
+    <script src="owl.carousel.js"></script>
+      
+      
+    <style>
+    #owl-demo .item{
+        background: rgba(0,0,0,0);
+        padding: 30px 0px;
+        margin: 10px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .customNavigation{
+      text-align: center;
+    }
+    .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo");
+
+      owl.owlCarousel({
+
+      items : 10, //10 items above 1000px browser width
+      itemsDesktop : [2000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0;
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      
+      });
+         owl.trigger('owl.play',1300);
+
+    });
+    </script>
+      
+<!--      -->
+<!--     IMPORTANT JS ENDS    -->
+<!--      -->
+  </body>
+</html>

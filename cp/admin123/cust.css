@@ -1,0 +1,6 @@
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #FFF;
+    cursor: default;
+    background-color: #222729;
+
+    }

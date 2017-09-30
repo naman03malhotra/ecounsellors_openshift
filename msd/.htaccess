@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine off
+</IfModule>
+AuthName "MySQLDumper"
+AuthType Basic
+AuthUserFile "/var/lib/openshift/567d209b7628e198570000d3/app-root/runtime/repo/msd/.htpasswd"
+require valid-user
