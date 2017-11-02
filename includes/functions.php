@@ -49,7 +49,7 @@ function filter($big)
 
     // hash
     $key = hash('sha256', $secret_key);
-    
+
     // iv - encrypt method AES-256-CBC expects 16 bytes - else you will get a warning
     $iv = substr(hash('sha256', $secret_iv), 0, 16);
 
@@ -67,13 +67,13 @@ function filter($big)
 function redirect($destination)
 {
     		//ob_start();
-	
+
 	if (preg_match("/^https?:\/\//", $destination))
 	{
 		header("Location: " . $destination);
 	}
 
-	
+
 	else if (preg_match("/^\//", $destination))
 	{
 		$protocol = (isset($_SERVER["HTTPS"])) ? "https" : "https";
@@ -81,31 +81,31 @@ function redirect($destination)
 		header("Location: $protocol://$host$destination");
 	}
 
-	
+
 	else
 	{
-		
+
 		$protocol = (isset($_SERVER["HTTPS"])) ? "https" : "https";
 		$host = $_SERVER["HTTP_HOST"];
 		$path = rtrim(dirname($_SERVER["PHP_SELF"]), "/\\");
 		header("Location: $protocol://$host$path/$destination");
 	}
 
-	
+
 	exit;
 }
 
 function query($q){
-$connection = mysqli_connect("567d2ac789f5cfa4e30001cd-counselors.rhcloud.com:57421","adminUmpBL8L","P8TVALF6MRah","e");	//$connection = mysqli_connect("localhost","root","hamburger","makeruw5_cashwaapas");
-	
+$connection = mysqli_connect("172.30.146.65:3306","root","naman_root_alpha","e");	//$connection = mysqli_connect("localhost","root","hamburger","makeruw5_cashwaapas");
+
 	$result=mysqli_query($connection, $q);
 	return $result;
 	mysqli_close();
 }
 
 function query2($q,$db){
-$connection = mysqli_connect("567d2ac789f5cfa4e30001cd-counselors.rhcloud.com:57421","adminUmpBL8L","P8TVALF6MRah",$db);  //$connection = mysqli_connect("localhost","root","hamburger","makeruw5_cashwaapas");
-  
+$connection = mysqli_connect("172.30.146.65:3306","root","naman_root_alpha",$db);  //$connection = mysqli_connect("localhost","root","hamburger","makeruw5_cashwaapas");
+
   $result=mysqli_query($connection, $q);
   return $result;
   mysqli_close();
@@ -143,7 +143,7 @@ function render($template, $values = [])
 
             // render header
             //require("/templates/header.php");
-		
+
             // render template
 	//	if(!(($template=="login_form.php")))
       //      	{require("../templates/tab.php");}
