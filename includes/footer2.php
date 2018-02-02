@@ -130,9 +130,9 @@ footer{
 
 
 <script type="text/javascript">
-  if (window.location.protocol !== 'https:') {
-    window.location = 'https://' + window.location.hostname + window.location.pathname + window.location.hash;
-}
+//   if (window.location.protocol !== 'https:') {
+//     window.location = 'https://' + window.location.hostname + window.location.pathname + window.location.hash;
+// }
 </script>
       <!--Start of Tawk.to Script-->
 <!--Start of Tawk.to Script-->
