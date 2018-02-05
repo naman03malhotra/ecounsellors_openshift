@@ -238,9 +238,9 @@ eval((function(){var c=[89,71,74,82,65,80,85,79,87,72,75,94,66,88,76,90,70,60,86
 
 </script>
 <script type="text/javascript">
-  if (window.location.protocol !== 'https:' || window.location.hostname!='ecounsellors.in') {
-    window.location = 'https://' + 'ecounsellors.in' + window.location.pathname + window.location.hash + window.location.search;
-}
+//   if (window.location.protocol !== 'https:' || window.location.hostname!='ecounsellors.in') {
+//     window.location = 'https://' + 'ecounsellors.in' + window.location.pathname + window.location.hash + window.location.search;
+// }
 </script>
 
 
